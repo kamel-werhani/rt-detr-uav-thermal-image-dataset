@@ -23,7 +23,7 @@ RT-DETR is a real-time object detection model based on **DEtection Transformers 
 
 The dataset consists of **thermal images captured by UAVs**, annotated with bounding boxes. It includes:  
 - **Infrared (IR) images** captured in various conditions.  
-- **Annotations** in COCO format (JSON).  
+- **Annotations** in COCO format.  
 - **Multiple object classes** (e.g., humans, vehicles, animals).  
 
 📌 **Ensure your dataset is structured as follows:**  
