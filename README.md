@@ -28,8 +28,8 @@ The dataset consists of **thermal images captured by UAVs**, annotated with boun
 📌 **Ensure your dataset is structured as follows:**  
 ```
 /dataset  
-    ├── images/  
-    │   ├── train/  
+    ├── Train/  
+    │   ├── images/  
     │   ├── val/  
     │   ├── test/  
     ├── annotations/  
