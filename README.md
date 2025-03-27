@@ -45,7 +45,7 @@ The dataset consists of **thermal images captured by UAVs**, annotated with boun
 
 ## **Training**  
 
-Run the training script in the Jupyter Notebook or from the command line:  
+Run the training script in the Jupyter Notebook:  
 ```bash
 # Load a model
 model = RTDETR('rtdetr-l.pt')
