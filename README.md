@@ -37,6 +37,7 @@ The dataset consists of **thermal images captured by UAVs**, annotated with boun
     ├── Test Set/  
     │   ├── images/  
     │   ├── annotations/
+    ├── data.yaml/ 
 ```
 
 
@@ -46,7 +47,13 @@ The dataset consists of **thermal images captured by UAVs**, annotated with boun
 
 Run the training script in the Jupyter Notebook or from the command line:  
 ```bash
-python train.py --epochs 200 --img-size 640 --batch-size 16 --optimizer adamw --lr 0.0001 --momentum 0.937
+# Load a model
+model = RTDETR('rtdetr-l.pt')
+
+#optimizer = torch.optim.AdamW(model.parameters(), lr=0.001)
+
+# Fine-tune
+results = model.train(data='path to/data.yaml', epochs=200, imgsz=640, optimizer='AdamW', lr0=0.0001, momentum=0.937)
 ```
 
 📌 **Key training settings:**  
@@ -62,7 +69,15 @@ python train.py --epochs 200 --img-size 640 --batch-size 16 --optimizer adamw --
 
 Evaluate the trained model on the validation set:  
 ```bash
-python evaluate.py --model weights/best.pt --data dataset/val.json
+model = RTDETR('path to /weights/best.pt')
+# Run the evaluation
+results = model.val(data="path to /data.yaml")
+
+# Print specific metrics
+print("Class indices with average precision:", results.ap_class_index)
+print("Average precision for all classes:", results.box.all_ap)
+print("Mean average precision at IoU=0.50:", results.box.map50)
+print("Mean recall:", results.box.mr)
 ```
 
 📌 **Metrics reported:**  
