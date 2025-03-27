@@ -1,6 +1,7 @@
 # **RT-DETR on UAV Thermal Image Dataset**
 
-This repository contains the implementation and training setup for **RT-DETR (Real-Time DEtection Transformer)** on a **UAV-based thermal image dataset**. The goal is to fine-tune RT-DETR for **thermal object detection** in aerial imagery.
+his repository contains the implementation and training setup for **YOLOv12** on a **UAV-based thermal image dataset**. The goal is to fine-tune YOLOv12 for **thermal object detection** in aerial imagery.
+
 
 ## **Table of Contents**  
 - [Introduction](#introduction)  
@@ -14,7 +15,7 @@ This repository contains the implementation and training setup for **RT-DETR (Re
 
 ## **Introduction**  
 
-RT-DETR is a real-time object detection model based on **DEtection Transformers (DETR)**. This project adapts it to **thermal UAV imagery** for tasks such as **human detection, vehicle tracking, and anomaly detection** in aerial thermal data.
+YOLOv12 (You Only Look Once version 12) is a state-of-the-art object detection model designed for real-time applications. This project applies YOLOv12 to **thermal UAV imagery** for tasks such as **human detection, vehicle tracking, and anomaly detection** in infrared aerial data.
 
 ---
 
