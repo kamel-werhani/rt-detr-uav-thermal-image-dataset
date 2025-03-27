@@ -4,8 +4,7 @@ This repository contains the implementation and training setup for **RT-DETR (Re
 
 ## **Table of Contents**  
 - [Introduction](#introduction)  
-- [Dataset](#dataset)  
-- [Installation](#installation)  
+- [Dataset](#dataset)    
 - [Training](#training)  
 - [Evaluation](#evaluation)  
 - [Results](#results)  
@@ -39,16 +38,6 @@ The dataset consists of **thermal images captured by UAVs**, annotated with boun
     │   ├── test.json  
 ```
 
----
-
-## **Installation**  
-
-Clone the repository and install the required dependencies:  
-```bash
-git clone https://github.com/your-username/rt-detr-uav-thermal-image-dataset.git  
-cd rt-detr-uav-thermal-image-dataset  
-pip install -r requirements.txt  
-```
 
 ---
 
